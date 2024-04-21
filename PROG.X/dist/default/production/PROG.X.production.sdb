@@ -1,0 +1,203 @@
+[p GLOBOPT AUTOSTATIC IEEE_DBL IEEE_FLT PIC14 PICREGULAR PICMID ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F877A ]
+[d frameptr 0 ]
+"3 F:\Decodificador_NEC\PROG.X\Bibliotecas/EUSART_C.c
+[v _UART_Write UART_Write `(v  1 e 1 0 ]
+"14
+[v _UART_Write_Text UART_Write_Text `(v  1 e 1 0 ]
+"21
+[v _UART_Write_Text_ln UART_Write_Text_ln `(v  1 e 1 0 ]
+"27
+[v _UART_Read UART_Read `(uc  1 e 1 0 ]
+"10 F:\Decodificador_NEC\PROG.X\Bibliotecas/IR_C.c
+[v _binaryToDecimal binaryToDecimal `(ul  1 e 4 0 ]
+"19
+[v _IR_Read IR_Read `(v  1 e 1 0 ]
+"10 C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"4 C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\Umul8_16.c
+[v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
+"6 C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\pic\__eeprom.c
+[v ___eecpymem __eecpymem `(v  1 e 1 0 ]
+"39
+[v ___memcpyee __memcpyee `(v  1 e 1 0 ]
+"21 F:\Decodificador_NEC\PROG.X\main.c
+[v _global global `II(v  1 e 1 0 ]
+"35
+[v _main main `(v  1 e 1 0 ]
+"4 F:\Decodificador_NEC\PROG.X\Bibliotecas/IR_C.c
+[v _counter counter `uc  1 e 1 0 ]
+[v _trava trava `uc  1 e 1 0 ]
+[v _code_count code_count `uc  1 e 1 0 ]
+"5
+[v _decimalValue decimalValue `ul  1 e 4 0 ]
+"6
+[v _code code `[33]uc  1 e 33 0 ]
+"217 D:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f877a.h
+[v _PORTB PORTB `VEuc  1 e 1 @6 ]
+[s S29 . 1 `uc 1 RB0 1 0 :1:0 
+`uc 1 RB1 1 0 :1:1 
+`uc 1 RB2 1 0 :1:2 
+`uc 1 RB3 1 0 :1:3 
+`uc 1 RB4 1 0 :1:4 
+`uc 1 RB5 1 0 :1:5 
+`uc 1 RB6 1 0 :1:6 
+`uc 1 RB7 1 0 :1:7 
+]
+"234
+[u S38 . 1 `S29 1 . 1 0 ]
+[v _PORTBbits PORTBbits `VES38  1 e 1 @6 ]
+"279
+[v _PORTC PORTC `VEuc  1 e 1 @7 ]
+[s S51 . 1 `uc 1 RBIF 1 0 :1:0 
+`uc 1 INTF 1 0 :1:1 
+`uc 1 TMR0IF 1 0 :1:2 
+`uc 1 RBIE 1 0 :1:3 
+`uc 1 INTE 1 0 :1:4 
+`uc 1 TMR0IE 1 0 :1:5 
+`uc 1 PEIE 1 0 :1:6 
+`uc 1 GIE 1 0 :1:7 
+]
+"478
+[s S60 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 T0IF 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 T0IE 1 0 :1:5 
+]
+[u S65 . 1 `S51 1 . 1 0 `S60 1 . 1 0 ]
+[v _INTCONbits INTCONbits `VES65  1 e 1 @11 ]
+[s S147 . 1 `uc 1 RX9D 1 0 :1:0 
+`uc 1 OERR 1 0 :1:1 
+`uc 1 FERR 1 0 :1:2 
+`uc 1 ADDEN 1 0 :1:3 
+`uc 1 CREN 1 0 :1:4 
+`uc 1 SREN 1 0 :1:5 
+`uc 1 RX9 1 0 :1:6 
+`uc 1 SPEN 1 0 :1:7 
+]
+"995
+[s S156 . 1 `uc 1 RCD8 1 0 :1:0 
+`uc 1 . 1 0 :5:1 
+`uc 1 RC9 1 0 :1:6 
+]
+[s S160 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 nRC8 1 0 :1:6 
+]
+[s S163 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 RC8_9 1 0 :1:6 
+]
+[u S166 . 1 `S147 1 . 1 0 `S156 1 . 1 0 `S160 1 . 1 0 `S163 1 . 1 0 ]
+[v _RCSTAbits RCSTAbits `VES166  1 e 1 @24 ]
+"1060
+[v _TXREG TXREG `VEuc  1 e 1 @25 ]
+"1067
+[v _RCREG RCREG `VEuc  1 e 1 @26 ]
+[s S83 . 1 `uc 1 PS 1 0 :3:0 
+`uc 1 PSA 1 0 :1:3 
+`uc 1 T0SE 1 0 :1:4 
+`uc 1 T0CS 1 0 :1:5 
+`uc 1 INTEDG 1 0 :1:6 
+`uc 1 nRBPU 1 0 :1:7 
+]
+"1276
+[s S90 . 1 `uc 1 PS0 1 0 :1:0 
+`uc 1 PS1 1 0 :1:1 
+`uc 1 PS2 1 0 :1:2 
+]
+[u S94 . 1 `S83 1 . 1 0 `S90 1 . 1 0 ]
+[v _OPTION_REGbits OPTION_REGbits `VES94  1 e 1 @129 ]
+"1376
+[v _TRISB TRISB `VEuc  1 e 1 @134 ]
+"1438
+[v _TRISC TRISC `VEuc  1 e 1 @135 ]
+[s S110 . 1 `uc 1 TX9D 1 0 :1:0 
+`uc 1 TRMT 1 0 :1:1 
+`uc 1 BRGH 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 SYNC 1 0 :1:4 
+`uc 1 TXEN 1 0 :1:5 
+`uc 1 TX9 1 0 :1:6 
+`uc 1 CSRC 1 0 :1:7 
+]
+"2026
+[s S119 . 1 `uc 1 TXD8 1 0 :1:0 
+`uc 1 . 1 0 :5:1 
+`uc 1 nTX8 1 0 :1:6 
+]
+[s S123 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 TX8_9 1 0 :1:6 
+]
+[u S126 . 1 `S110 1 . 1 0 `S119 1 . 1 0 `S123 1 . 1 0 ]
+[v _TXSTAbits TXSTAbits `VES126  1 e 1 @152 ]
+"2081
+[v _SPBRG SPBRG `VEuc  1 e 1 @153 ]
+"2088
+[v _CMCON CMCON `VEuc  1 e 1 @156 ]
+"2610
+[v _INTF INTF `VEb  1 e 0 @89 ]
+"2748
+[v _RCIF RCIF `VEb  1 e 0 @101 ]
+"3021
+[v _TRMT TRMT `VEb  1 e 0 @1217 ]
+"35 F:\Decodificador_NEC\PROG.X\main.c
+[v _main main `(v  1 e 1 0 ]
+{
+"61
+} 0
+"19 F:\Decodificador_NEC\PROG.X\Bibliotecas/IR_C.c
+[v _IR_Read IR_Read `(v  1 e 1 0 ]
+{
+"36
+[v IR_Read@i_299 i `i  1 a 2 23 ]
+"29
+[v IR_Read@i i `i  1 a 2 21 ]
+"65
+} 0
+"10
+[v _binaryToDecimal binaryToDecimal `(ul  1 e 4 0 ]
+{
+[v binaryToDecimal@binaryVector binaryVector `*.4DCuc  1 a 1 wreg ]
+"12
+[v binaryToDecimal@i i `i  1 a 2 16 ]
+"11
+[v binaryToDecimal@decimalValue decimalValue `ul  1 a 4 12 ]
+"10
+[v binaryToDecimal@binaryVector binaryVector `*.4DCuc  1 a 1 wreg ]
+[v binaryToDecimal@binaryVector binaryVector `*.4DCuc  1 a 1 11 ]
+"17
+} 0
+"21 F:\Decodificador_NEC\PROG.X\Bibliotecas/EUSART_C.c
+[v _UART_Write_Text_ln UART_Write_Text_ln `(v  1 e 1 0 ]
+{
+[v UART_Write_Text_ln@text text `*.4DCuc  1 a 1 wreg ]
+[v UART_Write_Text_ln@text text `*.4DCuc  1 a 1 wreg ]
+[v UART_Write_Text_ln@text text `*.4DCuc  1 a 1 9 ]
+"25
+} 0
+"14
+[v _UART_Write_Text UART_Write_Text `(v  1 e 1 0 ]
+{
+[v UART_Write_Text@text text `*.4DCuc  1 a 1 wreg ]
+"15
+[v UART_Write_Text@i i `i  1 a 2 6 ]
+"14
+[v UART_Write_Text@text text `*.4DCuc  1 a 1 wreg ]
+"16
+[v UART_Write_Text@text text `*.4DCuc  1 a 1 8 ]
+"19
+} 0
+"3
+[v _UART_Write UART_Write `(v  1 e 1 0 ]
+{
+[v UART_Write@data data `DCuc  1 a 1 wreg ]
+[v UART_Write@data data `DCuc  1 a 1 wreg ]
+[v UART_Write@data data `DCuc  1 a 1 4 ]
+"6
+} 0
+"21 F:\Decodificador_NEC\PROG.X\main.c
+[v _global global `II(v  1 e 1 0 ]
+{
+"33
+} 0
