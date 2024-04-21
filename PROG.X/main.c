@@ -56,6 +56,6 @@ void main(void){
     PORTC = 0x00;
     
     while(1){
-        IR_Read();
+        IR_Read();                  
     }
 }

@@ -6,10 +6,10 @@ Linker command line:
   --edf=C:\Program Files\Microchip\xc8\v2.46\pic\dat\20240104201356_en.msgs \
   -cn -h+dist/default/production\PROG.X.production.sym \
   --cmf=dist/default/production\PROG.X.production.cmf -z -Q16F877A \
-  -oC:\Users\danta\AppData\Local\Temp\xcAs42s.\driver_tmp_3.o \
+  -oC:\Users\danta\AppData\Local\Temp\xcAs8u4.\driver_tmp_3.o \
   --defsym=__MPLAB_BUILD=1 --fixupoverflow=error \
   -Mdist/default/production/PROG.X.production.map \
-  --md=C:\Users\danta\AppData\Local\Temp\xcAs42s.\driver_tmp_0.dat -E1 \
+  --md=C:\Users\danta\AppData\Local\Temp\xcAs8u4.\driver_tmp_0.dat -E1 \
   -ver=XC8 Compiler --acfsm=1493 -ACODE=00h-07FFhx4 -ASTRCODE=00h-01FFFh \
   -ASTRING=00h-0FFhx32 -ACONST=00h-0FFhx32 -AENTRY=00h-0FFhx32 \
   -ACOMMON=070h-07Fh -ABANK0=020h-06Fh -ABANK1=0A0h-0EFh \
@@ -22,7 +22,7 @@ Linker command line:
   -DSTRCODE=2 -DSTRING=2 -DCONST=2 -DENTRY=2 \
   -preset_vec=00h,intentry=04h,sivt,init,end_init -ppowerup=CODE \
   -pcinit=CODE -pfunctab=ENTRY -k \
-  C:\Users\danta\AppData\Local\Temp\xcAs42s.\driver_tmp_12.o \
+  C:\Users\danta\AppData\Local\Temp\xcAs8u4.\driver_tmp_12.o \
   dist/default/production\PROG.X.production.o 
 
 Object code version is 3.11
@@ -32,7 +32,7 @@ Machine type is 16F877A
 
 
                 Name                               Link     Load   Length Selector   Space Scale
-C:\Users\danta\AppData\Local\Temp\xcAs42s.\driver_tmp_12.o
+C:\Users\danta\AppData\Local\Temp\xcAs8u4.\driver_tmp_12.o
                 end_init                              E        E        3        8       0
                 reset_vec                             0        0        3        0       0
                 config                             2007     2007        1        0       4
@@ -161,7 +161,7 @@ UNUSED ADDRESS RANGES
 
 ?_binaryToDecimal            cstackCOMMON 0074
 IR_Read@i                    cstackBANK0  0056
-IR_Read@i_299                cstackBANK0  0058
+IR_Read@i_289                cstackBANK0  0058
 UART_Write@data              cstackCOMMON 0074
 UART_Write_Text@i            cstackCOMMON 0076
 UART_Write_Text@text         cstackCOMMON 0078
@@ -174,8 +174,6 @@ _OPTION_REGbits              (abs)        0081
 _PORTB                       (abs)        0006
 _PORTBbits                   (abs)        0006
 _PORTC                       (abs)        0007
-_RCIF                        (abs)        0065
-_RCREG                       (abs)        001A
 _RCSTAbits                   (abs)        0018
 _SPBRG                       (abs)        0099
 _TRISB                       (abs)        0086
