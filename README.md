@@ -16,3 +16,29 @@ Este componente se trata de um circuito foto-receptor da série TSOP18XX, capaz 
 
 Verificando o Datasheet, temos acesso ao pinout e o circuito recomendado:
 
+<p align="center" width="100%">
+  <img width="33%" src="https://github.com/MatheusCipolotti/-PIC-Decodificador_NEC/assets/102692462/f3cc7439-50b3-4830-bcba-37f4dd7631eb">
+</p>
+<p align="center" width="100%">
+  Figura 2 - Circuito recomendado  
+</p>
+
+<p align="center" width="100%">
+  <img width="33%" src="https://github.com/MatheusCipolotti/-PIC-Decodificador_NEC/assets/102692462/ba8efd98-8cb6-4a88-97c4-dcd725f17c30">
+</p>
+<p align="center" width="100%">
+  Figura 3 - Pinout 
+</p>
+
+O resistor de 100R e o capacitor de 4,7uF são recomendados como um filtro contra espúrios indesejados.
+
+## Aquisição do sinal
+Utilizando o foto-receptor em uma protoboard, foi possível aquisitar com o circuito recomendado e um osciloscópio o sinal LIGA/DESLIGA de um controle remoto convencional.
+
+<p align="center" width="100%">
+  <img width="33%" src="https://github.com/MatheusCipolotti/-PIC-Decodificador_NEC/assets/102692462/166c9e75-f49a-483c-b402-44828d6bcb15">
+
+</p>
+<p align="center" width="100%">
+  Figura 4 - Sinal completo  
+</p>
