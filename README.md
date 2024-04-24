@@ -37,8 +37,56 @@ Utilizando o foto-receptor em uma protoboard, foi possível aquisitar com o circ
 
 <p align="center" width="100%">
   <img width="33%" src="https://github.com/MatheusCipolotti/-PIC-Decodificador_NEC/assets/102692462/166c9e75-f49a-483c-b402-44828d6bcb15">
-
 </p>
 <p align="center" width="100%">
   Figura 4 - Sinal completo  
 </p>
+
+<p align="center" width="100%">
+  <img width="33%" src="https://github.com/MatheusCipolotti/-PIC-Decodificador_NEC/assets/102692462/b336fda1-04e9-470a-8dad-957019bd35c1">
+</p>
+<p align="center" width="100%">
+  Figura 5 - Largura do pulso inicial
+</p>
+
+<p align="center" width="100%">
+  <img width="33%" src="https://github.com/MatheusCipolotti/-PIC-Decodificador_NEC/assets/102692462/b1596099-9f33-4505-96a7-4c9f5ed31f1e">
+</p>
+<p align="center" width="100%">
+  Figura 6 - Largura do pulso valor
+</p>
+
+<p align="center" width="100%">
+  <img width="33%" src="https://github.com/MatheusCipolotti/-PIC-Decodificador_NEC/assets/102692462/9ee83a1f-4793-4567-9e94-2b3452d7fc9a">
+</p>
+<p align="center" width="100%">
+  Figura 7 - Largura do pulso valor 1
+</p>
+
+Com os valores coletados é possível estabelecer a rotina do código para a decodificação desse sinal.
+
+## Microcontrolador
+Para essa experiência, foi utilizado o microcontrolador 16F877A, o mesmo utilizará um cristal externo de 20MHz e o código foi desenvolvido no MPLABX utilizando o compilador XC8 V2.46.
+A estratégia utilizada para a captação eficiente desse sinal, foi o uso da interrupção externa do INT0 localizado no pino RB0, isso garante que a captação desse sinal seja tratada com alta prioridade pelo microcontrolador, evitando erros de pulling com o aumento do código.
+O sinal decodificado é enviado via serial (UART), o sinal é convertido para USB pelo CI CH340C e recebido por qualquer computador que possua algum monitor serial instalado (por exemplo o PUTTY).
+
+## Circuito
+<p align="center" width="100%">
+  <img width="33%" src="https://github.com/MatheusCipolotti/-PIC-Decodificador_NEC/assets/102692462/8696421c-e27e-4e4c-a81f-de9dc6e6b0db">
+</p>
+
+## Resultado
+Abaixo é possível ver alguns códigos interpretados no PUTTY, os 3 primeiros se tratam do código LIGA/DESLIGA, os 3 últimos são o botão OK do controle remoto:
+<p align="center" width="100%">
+  <img width="33%" src="https://github.com/MatheusCipolotti/-PIC-Decodificador_NEC/assets/102692462/467b9fc7-26cd-4627-99a4-505570bed04a">
+</p>
+<p align="center" width="100%">
+  Figura 8 - códigos recebidos pela serial
+</p>
+
+## Conclusão
+Com essa implementação, o sinal de controles remotos de padrão NEC foi decodificado, consequentemente, com alterações nesse código, é possível obter os valores e acionar os pinos do microcontrolador, o que por sua vez pode acionar Relés, enviar mensagens específicas para um barramento SPI ou o que for necessário para aplicações que necessitem do uso de controles remotos, vale destacar que o exemplo demonstrado não está interpretando o sinal REPEAT. 
+
+
+
+
